@@ -1,10 +1,10 @@
-package assorted;
+package factorial;
 
 import java.util.*;
 import java.lang.*;
 
 /**
- * Problem: for a given number N, return the number of zeros in the decimal representation of N! (factorial).
+ * Problem: for a given number N, return the number of zeros in the decimal representation of its factorial (N!).
  *
  * @author Cassio Sousa
  */

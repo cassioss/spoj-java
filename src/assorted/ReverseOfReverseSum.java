@@ -3,8 +3,9 @@ package assorted;
 import java.util.Scanner;
 
 /**
- * Problem: for two given numbers A and B, return the reversed sum of their reversed versions. For instance, if A = 12
- * and B = 13, then we first sum their reversed versions (21 + 31 = 52), and then reverse it (the final answer is 25).
+ * Problem: for two given numbers A and B, return the reversed sum of their reversed versions. For instance, if
+ * A = 12 and B = 13, then we first sum their reversed versions (21 + 31 = 52), and then reverse it
+ * (the final answer is 25).
  *
  * @author Cassio Sousa
  */

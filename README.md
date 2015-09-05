@@ -1,2 +1,2 @@
 # spoj-java
-Java programs for SPOJ problems. All passed. Spoilers here.
+Java programs for SPOJ problems. Spoilers here.

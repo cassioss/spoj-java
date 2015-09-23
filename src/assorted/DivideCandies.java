@@ -5,30 +5,41 @@ import java.util.List;
 import java.util.Scanner;
 
 /**
- * Problem: see if it is possible to share candies between different packages.
+ * Problem: see if it is possible to share candies between different packs.
  *
  * @author Cassio Sousa
  */
 public class DivideCandies {
 
+    /**
+     * Gets the number of candies that need to be relocated to achieve the average.
+     *
+     * @param candies the packs of candies with their amounts (integer).
+     * @return the number of candies that need to be relocated, or -1 otherwise.
+     */
     private static int shareCandies(List<Integer> candies) {
         double average = average(candies);
-        if(Math.floor(average) != average)
+        if (Math.floor(average) != average)
             return -1;
         int intAverage = (int) average;
         int toBeMoved = 0;
-        for(int i=0; i < candies.size(); i++){
-            int iCandy = candies.get(i);
-            if(iCandy > intAverage)
+        for (int iCandy : candies) {
+            if (iCandy > intAverage)
                 toBeMoved += iCandy - intAverage;
         }
         return toBeMoved;
     }
 
+    /**
+     * Calculates the average in a list of integers.
+     *
+     * @param numbers a list of integers.
+     * @return the average of those numbers (as a double precision number).
+     */
     private static double average(List<Integer> numbers) {
         double average = 0.0;
-        for (int i = 0; i < numbers.size(); i++)
-            average += 1.0 * numbers.get(i);
+        for (int number : numbers)
+            average += 1.0 * number;
         return average / (1.0 * numbers.size());
     }
 

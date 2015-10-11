@@ -10,14 +10,46 @@ import java.util.Scanner;
 public class NextPalindrome {
 
     /**
-     * Gives the next palindrome of a number.
+     * Gives the next palindrome for a given number.
      */
     private static int nextPalindrome(int number) {
         if (number < 0)
             return 0;
-        if (number >= 0 && number <= 8)
+        else if (number >= 0 && number <= 8)
             return number + 1;
-        return number + 1;      // Complete here
+        else if (hasOnlyNines(number))
+            return number + 2;
+        else
+            return dissecate(number);
+    }
+
+    private static int dissecate(int number) {
+        char[] dissecated = String.valueOf(number).toCharArray();
+        if (isPalindrome(dissecated)) {
+            return number + 3;
+        } else {
+            return number + 2;
+        }
+    }
+
+    private static boolean isPalindrome(char[] numberArray) {
+        int arrayLength = numberArray.length;
+        for (int i = 0; i < arrayLength / 2; i++) {
+            if (numberArray[i] != numberArray[arrayLength - i])
+                return false;
+        }
+        return true;
+    }
+
+    private static boolean hasOnlyNines(int number) {
+        int newNumber = number;
+        while (newNumber > 0) {
+            if (newNumber % 10 != 9)
+                return false;
+            else
+                newNumber = newNumber / 10;
+        }
+        return true;
     }
 
     /**

@@ -8,7 +8,6 @@ import java.util.Scanner;
  */
 public class NextFromSequence {
 
-
     /**
      * Returns the next number from a sequence of three integers, along with the type of the progression (arithmetic
      * or geometric).

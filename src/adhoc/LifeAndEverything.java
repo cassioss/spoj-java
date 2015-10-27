@@ -1,4 +1,4 @@
-package assorted;
+package adhoc;
 
 import java.util.*;
 import java.lang.*;

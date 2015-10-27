@@ -1,4 +1,4 @@
-package assorted;
+package adhoc;
 
 import java.math.BigInteger;
 import java.util.Scanner;

@@ -21,7 +21,7 @@ public class ZerosOfFactorial {
     }
 
     /**
-     * Main function.
+     * Main method.
      *
      * @param args input arguments (none).
      * @throws java.lang.Exception if any.

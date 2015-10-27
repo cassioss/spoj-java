@@ -54,7 +54,7 @@ public class PrimeGenerator {
     }
 
     /**
-     * Main function.
+     * Main method.
      *
      * @param args input arguments (none here).
      * @throws java.lang.Exception if any.

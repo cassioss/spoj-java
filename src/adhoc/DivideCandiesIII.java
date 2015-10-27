@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class DivideCandiesIII {
 
     /**
-     * Main function. Checks if a certain number of candies can be divided by a certain number of kids.
+     * Main method. Checks if a certain number of candies can be divided by a certain number of kids.
      */
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);

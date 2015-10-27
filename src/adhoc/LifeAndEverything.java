@@ -12,7 +12,7 @@ import java.lang.*;
 public class LifeAndEverything {
 
     /**
-     * Main function.
+     * Main method.
      *
      * @param args Input arguments (none).
      * @throws java.lang.Exception if any.

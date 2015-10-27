@@ -19,7 +19,7 @@ public class WillItStop {
     }
 
     /**
-     * Main function.
+     * Main method.
      *
      * @param args input arguments (none).
      * @throws Exception if any.

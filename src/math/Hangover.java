@@ -6,7 +6,7 @@ import java.util.Scanner;
  * @author Cassio dos Santos Sousa
  * @version 1.0
  */
-public class HangOver {
+public class Hangover {
 
     /**
      * Given the traditional game of hanging cards (which allows us to make an infinite bridge of cards by pushing it

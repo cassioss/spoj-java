@@ -3,20 +3,11 @@ package adhoc;
 import java.util.Scanner;
 
 /**
- * Problem: for a given number, see if it stops or not.
+ * Problem: for a given number, see if it stops or not. It basically checks if the number is a power of 2, bitwise.
  *
  * @author Cassio Sousa
  */
 public class WillItStop {
-
-    private static String willItStop(double value) {
-        if(value == 0) return "TAK";
-        double log2number = Math.log(value)/Math.log(2.0);
-        if(log2number == Math.floor(log2number))
-            return "TAK";
-        else
-            return "NIE";
-    }
 
     /**
      * Main method.
@@ -26,7 +17,7 @@ public class WillItStop {
      */
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
-        double n = sc.nextDouble();
-        System.out.println(willItStop(n));
+        long n = sc.nextLong(), n1 = n - 1;
+        System.out.println((n & n1) == 0 ? "TAK" : "NIE");
     }
 }

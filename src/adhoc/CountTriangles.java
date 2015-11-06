@@ -17,7 +17,7 @@ public class CountTriangles {
      * (4) --> 1+(4) + 3+(3) + 6+(2) + 10+(1) + 1-(2) + 6-(1)
      * (5) --> 1+(5) + 3+(4) + 6+(3) + 10+(2) + 15+(1) + 3-(2) + 10-(1)
      */
-    private static long totalTriangles(int n) {
+    private static long totalTriangles(long n) {
         long totalSum = n * (n + 1) * (n + 2) / 6;
         while (n >= 2) {
             totalSum += partialSum(n - 1);
@@ -29,7 +29,7 @@ public class CountTriangles {
     /**
      * Calculates the partial sum of 0 + 1 + 2 + ... + n.
      */
-    private static long partialSum(int n) {
+    private static long partialSum(long n) {
         return n * (n + 1) / 2;
     }
 
@@ -40,7 +40,7 @@ public class CountTriangles {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         for (int i = 0; i < t; i++) {
-            int n = sc.nextInt();
+            long n = sc.nextLong();
             System.out.println(totalTriangles(n));
         }
     }
